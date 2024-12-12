@@ -379,18 +379,20 @@ a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 40px;
   padding: 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.swiper-slide b{
- color: rgb(174, 61, 174);
- font-size: 40px;
+.swiper-slide b {
+  color: rgb(174, 61, 174);
+  font-size: 40px;
 }
 
-
-.swiper-slide p{
+.swiper-slide p {
   font-size: 20px;
-
 }
-.swiper-slide p span{
+.swiper-slide p span {
   color: rgb(141, 192, 66);
   font-weight: 550;
 }
@@ -401,11 +403,11 @@ a:hover {
   border-radius: 10px;
   margin-top: 40px;
 }
-.swiper-pagination{
+.swiper-pagination {
   bottom: 5px !important;
   z-index: 100 !important;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: var(--highlight-color) !important;
 }
 
@@ -466,7 +468,8 @@ a:hover {
 
   #content {
     width: 90vw;
-    padding: 30px;}
+    padding: 30px;
+  }
   input {
     width: 90%;
   }

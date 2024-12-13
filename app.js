@@ -32,6 +32,10 @@ function m3() {
     "output3"
   ).innerHTML = `Kvadratdga oshirilgan arr:<br> ${result}`;
 }
+
+
+
+
 function m4() {
   const input = document.getElementById("inputValue4").value;
   const array = input.trim().split(" ").map(Number);
@@ -49,8 +53,17 @@ function m4() {
   }
   return (document.getElementById(
     "output4"
-  ).innerHTML = `Takrorlanmas elementlar o'chirildi: <br>  [ ${array} ]`);
+  ).innerHTML = `Takrorlangan elementlar o'chirildi: <br>  [ ${array} ]`);
 }
+
+
+
+
+
+
+
+
+
 function m5() {
   const n = +document.getElementById("n").value;
   const input = document.getElementById("inputValue5").value;
@@ -78,14 +91,19 @@ function m6() {
     }
   }
 }
+
+
+
 function m7() {
   const input = document.getElementById("inputValue7").value;
   const array = input.trim().split(" ").map(Number);
-  array.sort((a, b) => a - b);
-  document.getElementById("output7").innerHTML = `Eng katta element: [ ${
-    array[array.length - 1]
+  array.sort((a, b) => a - b).pop();
+  document.getElementById("output7").innerHTML = `Olib tashlandi: [ ${
+    array
   } ]`;
 }
+
+
 
 function m8() {
   const input = document.getElementById("inputValue8").value;
@@ -180,5 +198,4 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
   },
 });
-
 
